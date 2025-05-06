@@ -1,0 +1,2 @@
+/* This is a placeholder file to ensure the directory structure exists */
+/* Add your logo.png and fifa-hero.jpg images to this folder */

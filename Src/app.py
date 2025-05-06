@@ -389,7 +389,7 @@ def main():
         # Find accuracy plot image
         accuracy_plot_path = find_image("accuracy_plot.png")
         if accuracy_plot_path:
-            st.image(accuracy_plot_path, use_container_width=True,
+            st.image(accuracy_plot_path, use_column_width=True,
                     caption="**Fig. 1**: Train vs. Validation Accuracy over 100 Epochs")
         else:
             st.warning("Accuracy plot image not found")
@@ -405,7 +405,7 @@ def main():
         # Find loss plot image
         loss_plot_path = find_image("loss_plot.png")
         if loss_plot_path:
-            st.image(loss_plot_path, use_container_width=True,
+            st.image(loss_plot_path, use_column_width=True,
                     caption="**Fig. 2**: Train vs. Validation Loss over 100 Epochs")
         else:
             st.warning("Loss plot image not found")
@@ -421,7 +421,7 @@ def main():
         # Find pipeline diagram image
         pipeline_path = find_image("pipeline.png")
         if pipeline_path:
-            st.image(pipeline_path, use_container_width=True,
+            st.image(pipeline_path, use_column_width=True,
                     caption="**Fig. 3**: End‑to‑end valuation pipeline")
         else:
             st.warning("Pipeline diagram image not found")

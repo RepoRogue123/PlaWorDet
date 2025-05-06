@@ -18,7 +18,6 @@ def add_bg_from_local(image_file):
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            filter: brightness(0.9) ;
         }}
         </style>
         """,
@@ -68,10 +67,12 @@ st.markdown("""
         right: 0;
         top: 0;
         bottom: 0;
-        background: linear-gradient(-45deg, rgba(13,13,13,0.7), rgba(26,26,26,0.7), rgba(15,15,15,0.7), rgba(22,22,22,0.7));
+        background: linear-gradient(-45deg, rgba(13,13,13,0.6), rgba(26,26,26,0.5), rgba(15,15,15,0.6), rgba(22,22,22,0.6));
         background-size: 400% 400%;
         animation: bgGradient 15s ease infinite;
         z-index: -1;
+        opacity: 0.8;
+        background: rgba(0, 0, 0, 0.2); /* Add a slight dark overlay to reduce brightness */
     }
     
     @keyframes bgGradient {
@@ -316,7 +317,6 @@ def main():
             st.markdown('<div class="result-animation">', unsafe_allow_html=True)
             st.markdown(f"""
             <div style="background: linear-gradient(45deg, rgba(70,80,150,0.4), rgba(108, 142, 255, 0.3)); 
-                        padding: 1.5rem; border-radius: 0.8rem; text-align: center; margin-top: 1.5rem;">
                 <h2>Predicted Price</h2>
                 <h1 style="font-size: 2.5rem; color: #ffffff; text-shadow: 0 0 10px rgba(108, 142, 255, 0.7);">
                     €{price:.2f} Million

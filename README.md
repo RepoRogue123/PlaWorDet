@@ -1,5 +1,9 @@
 # PlaWorDet-WARP24 - FIFA Player Worth Determination Model
 
+<div align="center">
+<img src="src/Fifa.jpg" width="800" title="FIFA Logo">
+</div>
+
 **PlaWorDet-WARP24** is an AI/ML project designed to calculate the value of football players based on a range of metrics, including performance statistics, team chemistry, and positional dynamics. This model is unique in its ability to offer club-specific valuations by considering existing team dynamics, enabling more informed bidding decisions in both in-game and real-life FIFA auctions.
 
 ## Objective
@@ -57,29 +61,38 @@ The primary goal of this project is to provide an accurate player worth estimati
 ## Files and Directories
 
 ```bash
-├── model
-│   ├── app2_f1.pth          # Saved model for the player worth prediction
-│   ├── best_params.json      # Best model parameters
+PlaWorDet-WARP24/
+├── data/
+│   ├── processed/              # Processed datasets ready for modeling
+│   └── raw/                    # Original, unmodified datasets
+├── models/                     # Trained model files
+│   ├── app2_f1.pth            # Saved model for the player worth prediction
+│   ├── best_params.json       # Best model parameters
 │   ├── label_encoder.pkl      # Label encoder for categorical data
 │   ├── poscalerfin.pkl        # Position scaling model
 │   └── pos_model_file.pth     # Position prediction model
-├── plots
+├── notebooks/                  # Jupyter notebooks for exploration and analysis
+├── plots/                      # Visualization outputs
 │   ├── accuracy_plot.png      # Accuracy plot
 │   ├── loss_plot.png          # Loss plot
 │   ├── pipeline.png           # Pipeline flowchart
-│   └── plot_2_f1.png         # Additional plots
-├── Src
-│   ├── app.py                # Main app file for Streamlit
+│   └── fifa_logo.png          # FIFA logo for README
+├── src/                        # Source code for the project
+│   ├── app.py                 # Main app file for Streamlit
 │   ├── price_predictor.py     # Final inference pipeline
-│   ├── analysis.py           # Analyzes the dataset for insights
-│   ├── analysis_similarity.py  # Examines price variations with similarity scores
-│   ├── FIFA01_merge.py       # Merges datasets from FIFA 17 to FIFA 23
+│   ├── analysis.py            # Analyzes the dataset for insights
+│   ├── analysis_similarity.py # Examines price variations with similarity scores
+│   ├── FIFA01_merge.py        # Merges datasets from FIFA 17 to FIFA 23
 │   ├── position_tree.py       # Constructs a binary tree for positional representation
 │   ├── PositionPredictor.py   # Predicts the best preferred position for a player
 │   ├── Similarity_Score.py    # Calculates similarity scores between players
-│   ├── preprocess_data.py      # Preprocesses input data for the model
-│   ├── worthpredictionbasic.py  # Calculates the base price of a player
-│   └── __pycache__            # Compiled Python files
+│   ├── preprocess_data.py     # Preprocesses input data for the model
+│   └── worthpredictionbasic.py # Calculates the base price of a player
+├── tests/                      # Test files
+├── .gitignore                  # Git ignore file
+├── LICENSE                     # License file
+├── README.md                   # Project README
+└── requirements.txt            # Project dependencies
 ```
 
 ### File Descriptions

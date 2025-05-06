@@ -62,21 +62,17 @@ The primary goal of this project is to provide an accurate player worth estimati
 
 ```bash
 PlaWorDet-WARP24/
-├── data/
-│   ├── processed/              # Processed datasets ready for modeling
-│   └── raw/                    # Original, unmodified datasets
+├── data/                       # Original, unmodified datasets
 ├── models/                     # Trained model files
 │   ├── app2_f1.pth            # Saved model for the player worth prediction
 │   ├── best_params.json       # Best model parameters
 │   ├── label_encoder.pkl      # Label encoder for categorical data
 │   ├── poscalerfin.pkl        # Position scaling model
 │   └── pos_model_file.pth     # Position prediction model
-├── notebooks/                  # Jupyter notebooks for exploration and analysis
 ├── plots/                      # Visualization outputs
 │   ├── accuracy_plot.png      # Accuracy plot
 │   ├── loss_plot.png          # Loss plot
 │   ├── pipeline.png           # Pipeline flowchart
-│   └── fifa_logo.png          # FIFA logo for README
 ├── src/                        # Source code for the project
 │   ├── app.py                 # Main app file for Streamlit
 │   ├── price_predictor.py     # Final inference pipeline
@@ -88,8 +84,6 @@ PlaWorDet-WARP24/
 │   ├── Similarity_Score.py    # Calculates similarity scores between players
 │   ├── preprocess_data.py     # Preprocesses input data for the model
 │   └── worthpredictionbasic.py # Calculates the base price of a player
-├── tests/                      # Test files
-├── .gitignore                  # Git ignore file
 ├── LICENSE                     # License file
 ├── README.md                   # Project README
 └── requirements.txt            # Project dependencies

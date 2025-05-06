@@ -58,6 +58,10 @@ The primary goal of this project is to provide an accurate player worth estimati
     streamlit run Src/app.py
     ```
 
+## Important Note
+
+To ensure accurate predictions, users must input the player's name and club's name exactly as specified in the Excel file located in the `data` directory. This file contains the standardized format for names and clubs, which the model relies on for processing.
+
 ## Files and Directories
 
 ```bash
@@ -110,6 +114,28 @@ PlaWorDet-WARP24/
 - **`preprocess_data.py`**: Responsible for preprocessing the raw input data to ensure quality and consistency before it is fed into the model.
 
 - **`worthpredictionbasic.py`**: Contains the code to find the base price of a player based on their statistics using a multi-layer perceptron (MLP).
+
+## Deployed Website
+
+You can access the deployed version of the PlaWorDet-WARP24 application at the following link:
+
+[Deployed Website](https://plawordet.streamlit.app)  
+
+### Website Screenshots
+
+Below are some screenshots of the deployed website interface:
+
+1. **Player Worth Prediction Page**:
+    <div align="center">
+    <img src="Player_prediction.png" width="800" title="Player prediction">
+    </div>
+
+2. **About Page**:
+    <div align="center">
+    <img src="About.png" width="800" title="About">
+    </div>   
+
+
 
 ## Future Scope
 

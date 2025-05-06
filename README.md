@@ -1,7 +1,7 @@
 # PlaWorDet-WARP24 - FIFA Player Worth Determination Model
 
 <div align="center">
-<img src="src/Fifa.jpg" width="800" title="FIFA Logo">
+<img src="Fifa.jpg" width="800" title="FIFA Logo">
 </div>
 
 **PlaWorDet-WARP24** is an AI/ML project designed to calculate the value of football players based on a range of metrics, including performance statistics, team chemistry, and positional dynamics. This model is unique in its ability to offer club-specific valuations by considering existing team dynamics, enabling more informed bidding decisions in both in-game and real-life FIFA auctions.

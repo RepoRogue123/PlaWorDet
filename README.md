@@ -40,7 +40,7 @@ The primary goal of this project is to provide an accurate player worth estimati
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Laksh-Mendpara/PlaWorDet-WARP24.git
+    git clone (https://github.com/RepoRogue123/PlaWorDet.git)
     ```
 2. Navigate to the project directory:
     ```bash
